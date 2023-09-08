@@ -1,0 +1,282 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOkwrRtEH0ADu+cLT0AYS56",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/LucsTx/trabalhoIndMod5/blob/main/Relat%C3%B3rio%20Google%20Collab\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Trabalho Individual Módulo V - \" Pessoas deixando a empresa \""
+      ],
+      "metadata": {
+        "id": "S-CKN_0D7cdI"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## Lucas Teixeira do Nascimento - Programa VAMO AI"
+      ],
+      "metadata": {
+        "id": "o2GLQKBc7u_a"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Análise dos Motivos de Saída dos Funcionários\n",
+        "\n",
+        "Introdução:\n",
+        "Recebemos um relatório do departamento de Recursos Humanos (RH) contendo dados sobre os motivos que levam os funcionários a se desligarem da empresa. Vamos analisar esses dados de forma mais detalhada."
+      ],
+      "metadata": {
+        "id": "nScmm3Ma78n1"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "![Tabela de Dados RH](https://github.com/LucsTx/trabalhoIndMod5/blob/main/img/72A089FB-1214-4211-AFB9-6AE3D7CAFE8A.png?raw=true)\n"
+      ],
+      "metadata": {
+        "id": "rrq6FZ7w-P4O"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Os dados na tabela acima foram fornecidos pelo RH. A primeira coluna trás os motivos das saídas dos funcionários da empresa, ao total são 11 motivos.\n",
+        "A segunda coluna trás a capacidade de impacto da empresa em cada um desses motivos enquanto na colunas 3 e 4, temos a frequência das saídas dos funcionarios nesses motivos. Os dados da terceira coluna foram coletados dos funcionários em uma entrevista com o RH. Equanto os da quarta foram coletados no preenchimento de um questionário no momento da saída."
+      ],
+      "metadata": {
+        "id": "7JrpNGUqAwVT"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "![Tratamento dos Dados](https://github.com/LucsTx/trabalhoIndMod5/blob/main/img/Captura%20de%20tela%202023-09-03%20233543.png?raw=true)"
+      ],
+      "metadata": {
+        "id": "SKtbrbwaCgpl"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Tratamento dos Dados:\n",
+        "\n",
+        " - Converti valores numéricos em formato de string para inteiro.\n",
+        " - Renomeei as colunas para o português.\n",
+        " - Limpei valores em branco.\n",
+        "\n",
+        "*Com o auxílio do interpretador de Dados.\n"
+      ],
+      "metadata": {
+        "id": "SYeeW9gYDi_u"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "![Gráfíco barras](https://github.com/LucsTx/trabalhoIndMod5/blob/main/img/Captura%20de%20tela%202023-09-02%20212402.png?raw=true)"
+      ],
+      "metadata": {
+        "id": "uDoBRxTSESG9"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## Gráfico de Barras"
+      ],
+      "metadata": {
+        "id": "Hp2hbvZ-7uLS"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "- No gráfico acima (Gráfico de Barras) podemos acompanhar o comparativo entre as duas coletas dos motivos de saídas. Com o comparativos entra cada motivo, vemos uma diferença na quantidade de incidencias de acordo com o tipo de coleta.\n",
+        "\n",
+        "[Link do Gráfico](https://public.tableau.com/trusted/ongwnKWaSEmuY1HnWHGK_w==:RYiWK66DEMKJHP8G8IBvd3O3?:redirUrl=%2Fprofile%2Fapi%2Fpublish%2FProjetoIndividualMduloVBarras%2FBarra-s)"
+      ],
+      "metadata": {
+        "id": "5_V2pkyDEyxD"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "![Grafico de Dispersão](https://github.com/LucsTx/trabalhoIndMod5/blob/main/img/Captura%20de%20tela%202023-09-08%20192344.png?raw=true)"
+      ],
+      "metadata": {
+        "id": "PtK15I8jLvQ4"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## Gráfico de Dispersão\n"
+      ],
+      "metadata": {
+        "id": "jpoIw3Hy7ymy"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "- O gráfico acima (Dispersão) nos permite ver qual faixa de valor teve mais registro, baseando-se na concentração de respostas. Também nos permite reconhecer possíveis outliers. Vemos uma concentração do número de respostas entre 9 e 44. Enquanto o motivo \"progressão de carreira\" ultrapassou 130 respostas.\n",
+        "\n",
+        "[Link do Gráfico](https://public.tableau.com/app/profile/lucas.teixeira5108/viz/ProjetoIndividualMduloVDisperso/GrficoDisperso?publish=yes)\n"
+      ],
+      "metadata": {
+        "id": "nhzXHSrcMPaX"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "![Gráfico de linhas](https://github.com/LucsTx/trabalhoIndMod5/blob/main/img/Captura%20de%20tela%202023-09-08%20193616.png?raw=true)"
+      ],
+      "metadata": {
+        "id": "tXTBYCvy73Tx"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## Gráfico de Linhas\n"
+      ],
+      "metadata": {
+        "id": "-M_GDNeO8RMt"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "- Optamos por um gráfico de linha para análise, com uma linha média realçando causas acima da média. Porém, é importante notar que esses gráficos são sensíveis a valores atípicos, o que pode distorcer a visualização. Além disso, eles são mais adequados para dados temporais ou numéricos, não sendo ideais para dados categóricos, onde podem criar falsas impressões de continuidade.\n",
+        "\n",
+        "[Link do Gráfico](https://public.tableau.com/app/profile/lucas.teixeira5108/viz/ProjetoIndividualMduloVI/GrficodeLinhas?publish=yes)"
+      ],
+      "metadata": {
+        "id": "oNyBNCRC8UO4"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "![análise de impacto](https://github.com/LucsTx/trabalhoIndMod5/blob/main/img/Captura%20de%20tela%202023-09-08%20112446.png?raw=true)"
+      ],
+      "metadata": {
+        "id": "V4380Kxa9AjB"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## Motivo x Impacto"
+      ],
+      "metadata": {
+        "id": "Rm3LE9Nl9uVd"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "- No gráfico acima vemos a análise da capacidade de impacto de cada motivo de saída. Entendemos que os motivos de maior valor como 'treinamento' e 'conflito com outro', sejam os motivos que a empresa mais tem chance de impactar nesses números. Os numeros dos motivos de menor valor, como'doença' e 'realocação', referem-se a motivos que a empresa não tem tanto controle para mudá-los.\n",
+        "\n",
+        "[Link do Gráfico](https://public.tableau.com/app/profile/lucas.teixeira5108/viz/ProjetoIndividualMduloVMotivoxImpacto/AnaliseMotivoImpacto?publish=yes)\n"
+      ],
+      "metadata": {
+        "id": "VIX7-1xz90S4"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        " ![Compara respostas](https://github.com/LucsTx/trabalhoIndMod5/blob/main/img/Captura%20de%20tela%202023-09-08%20195953.png?raw=true)"
+      ],
+      "metadata": {
+        "id": "eUCkprQV-w6z"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## Comparando total de respostas"
+      ],
+      "metadata": {
+        "id": "G9IMOfVwBtCg"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "- No gráfico de barras, apresentamos os totais de pontos de dois tipos de relatórios. Essa visualização nos permite identificar e analisar as diferenças nas quantidades, proporcionando insights valiosos para possíveis melhorias.\n",
+        "\n",
+        "Uma observação importante é que, quando os funcionários preenchem o formulário com a assistência do profissional de RH, a pontuação é 61 pontos maior em média. Esse dado indica que algumas pessoas não estão preenchendo os formulários por conta própria, o que pode afetar negativamente nossa análise.\n",
+        "\n",
+        "Uma sugestão de melhoria é implementar uma política mais rigorosa para garantir que todos os funcionários preencham ambos os formulários. Isso ajudaria a obter dados mais completos e confiáveis, especialmente quando ocorre um desligamento.\n",
+        "\n",
+        "[Link do Gráfico](https://public.tableau.com/app/profile/lucas.teixeira5108/viz/ProjetoIndividualMduloV/RHxQuestionrio)\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "txec0onjBwvR"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Conclusão"
+      ],
+      "metadata": {
+        "id": "pVc0mRw0CMH-"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "- Chegamos a conclusão que o motivo que mais causa saídas de funcionários é a Progressão de carreira, e isso impacta muito a empresa pois funcionários sem perspectivas de crescimento, pode levantar uma reflexão de uma empresa que não investe no crescimento dos próprios funcionarios e no geral do seu próprio crescimento. Uma alternativa seria a implementação de um Plano de desenvolvimento individual em cada área, criando para cada funcionário uma trilha de crescimento pessoal e de especialização. A longo prazo se teria profissionais mais capacitados, e entrosados com a empresa, uma vez que esta foi em parte responsável por seu crescimento.  "
+      ],
+      "metadata": {
+        "id": "IaeTOIFCCYfs"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [],
+      "metadata": {
+        "id": "-pPU80htDi6D"
+      }
+    }
+  ]
+}
